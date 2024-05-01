@@ -82,6 +82,12 @@ nav ul li a:hover::after{
     color: #5271FF;
 }
 
+.sub-title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+}
 
 /*------------------ ABOUT ME -----------------*/
 
@@ -91,11 +97,11 @@ nav ul li a:hover::after{
     color: #ffffff;
 }
 
-.sub-title {
-    margin-bottom: 30px;
+#about .sub-title {
+    margin-bottom: 20px;
     font-size: 40px;
     font-weight: 600;
-    color: #ffffff;
+    color: #000000;
 }
 
 .underline {
@@ -127,12 +133,19 @@ nav ul li a:hover::after{
     flex-basis: 65%;
     text-align: justify;
     line-height: 1.2;
-    margin-left: 0px;
+    margin-left: 20px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #ffffff;
+    height: 590px;
+    color: #000000;
+    border-radius: 15px;
 }
 
 .tab-titles{
     display: flex;
-    margin: 50px 0 20px;
+    margin: 30px 0 20px;
 }
 
 .tab-links{
