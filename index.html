@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b26504e8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!----------------------HOME---------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Muvil Kothari</span></h1>
+                <p id="header-text-loop"></p>
+            </div>
+
+            <script>
+                window.addEventListener('DOMContentLoaded', () => {
+                    const headerTexts = ['I am a <span>Developer</span>', 'I am a <span>Trailblazer</span>', 'I am a <span>Challenger</span>', 'I am an <span>Enthusiast</span>'];
+                    let currentIndex = 0;
+                    const headerTextElement = document.querySelector('#header-text-loop');
+
+                    setInterval(() => {
+                        headerTextElement.innerHTML = headerTexts[currentIndex];
+                        currentIndex = (currentIndex + 1) % headerTexts.length;
+                    }, 1500);
+                });
+            </script>
+        </div>
+    </div>
+
+    <!----------------------ABOUT ME---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/About.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! I'm <span class ="bold">Muvil Kothari</span>, pursuing a <span class= "underline">Bachelors's of Engineering in Computer Science </span> and a <span class= "underline">Masters in Technology Entrepreneurship</span> at SUTD. I thrive on connecting with people in sports, culture, and academics. I love embracing uncertainty and seeking new experiences because that's where the magic happens.<br><br>
+                    When I'm not exploring new ventures, you'll find me on the field, playing sports and keeping my competitive spirit alive.<br><br>
+                    If you're looking for a results-driven, passionate individual ready to take on the world of tech and entrepreneurship, you've found your guy!<br><br>
+                    Let's connect and make amazing things happen together.</p>
+                        
+                    <div class="tab-titles">
+                        <p class= "tab-links active-link" onclick="opentab('software')"><i class="fa-solid fa-code"></i> Software</p>
+                        <p class= "tab-links" onclick="opentab('web-design')"><i class="fa-regular fa-window-maximize"></i> Web Design</p>
+                        <p class= "tab-links" onclick="opentab('graphic-design')"><i class="fa-sharp fa-solid fa-crop-simple"></i> Graphic Design</p>
+                        <p class= "tab-links" onclick="opentab('supply-chain')"><i class="fa-solid fa-link"></i> Supply Chain</p>
+                    </div>
+                        <div class="tab-contents active-tab" id="software">                            
+                            <ul>
+                                    <li><span>Python | Java </span><br> Proficient OOP skills</li>
+                                    <li><span>Android</span><br>Android Studio for Android applications</li>
+                                    <li><span>Machine Learning</span><br>Linear regression models</li>
+                                    <li><span>RPA | VBA</span><br> Automation using Ui-Path</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="web-design">                            
+                            <ul>
+                                    <li><span>HTML | CSS</span><br> Web designing</li>
+                                    <li><span>XML</span><br>Android programming</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="graphic-design">                            
+                            <ul>
+                                    <li><span>Figma</span><br> Wireframing prototype designs with UI/UX</li>
+                                    <li><span>Canva</span><br> Designing web/app interfaces </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="supply-chain">
+                            <ul>
+                                    <li><span>Supply Planning</span></li>
+                                    <li><span>Demand Forecasting</span></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------EDUCATION---------------------->
+    <div id="education">
+        <div class="container">
+            <h1 class="sub-title">Education</h1>
+            <div class="education-list">
+                <div class="education-item">
+                    <h2>Singapore University of Technology and Design (SUTD)</h2>
+                    <p> <span class="bold">2022 - 2027</span><br>
+                        <span class="bold">Bachelors in Computer Science & Masters in Technology Entrepreneurship </span><br>
+                        STEP Scholarship <br>
+                        Hanyang University Korea Summer Programme [July 2023 - Aug 2023] <br>
+                        UC Berkeley Exchange [Jan 2025 - Aug 2025] <br>
+                        Shenzhen University China Exchange [Sep 2025 - Dec 2025]</p>
+                </div>
+    
+                <div class="education-item">
+                    <h2>Victoria Junior College</h2>
+                    <p><span class="bold">2018 - 2019</span><br>
+                        Physics, Chemistry, Maths, Economics, General Paper, Project Work, Hindi <br>
+                        Cricket Captain</p>
+                </div>
+    
+                <div class="education-item">
+                    <h2>Victoria School</h2>
+                    <p><span class="bold">2015 - 2017</span> <br>
+                        Triple science, A-Maths, E-Maths, History, Social Science, English, Hindi <br>
+                        Cricket Vice-Captain <br>
+                        School Senior Prefect</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!----------------------PROJECTS---------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <!--------------GOBBLE-------------->
+                <div class="project">
+                    <div class="project-img">
+                        <img src="Images/gobble.png" alt="Gobble">
+                    </div>
+                    <div class="project-details">
+                        <h2>Gobble</h2>
+                        <p>Centralised dining review app designed to simplify decision-making</p>
+                    </div>
+                    <div class="layer">
+                        <h3>2nd Place in Singtel 2024 Awards</h3>
+                        <p>Received award for innovative design and flawless UI </p>
+                        <a href="gobble.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!--------------HEXLE-------------->
+                <div class="project">
+                    <div class="project-img">
+                        <img src="Images/hexle.png" alt="Hexle">
+                    </div>
+                    <div class="project-details">
+                        <h2>Hexle</h2>
+                        <p>Classic code-breaking puzzle game using hexadecimal digits (0-F)</p>
+                    </div>
+                    <div class="layer">
+                        <h3>SUTD Project</h3>
+                        <p>Recognition of merit in SUTD showcase for computational structure</p>
+                        <a href="hexle.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!--------------GHI-------------->
+                <div class="project">
+                    <div class="project-img">
+                        <img src="Images/ghi.png" alt="Global.Humanity">
+                    </div>
+                    <div class="project-details">
+                        <h2>Global.Humanity</h2>
+                        <p>92.7% accuracy linear regression model to predict Global Hunger Index (GHI)</p>
+                    </div>
+                    <div class="layer">
+                        <h3>SUTD Best Project 2023</h3>
+                        <p>Received award for leading and delivering impactful solution</p>
+                        <a href="https://github.com/muvilk/Global-Hunger-Index-ML-Model"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!--------------DTI-------------->
+                <div class="project">
+                    <div class="project-img">
+                        <img src="Images/dti.png" alt="Project 3">
+                    </div>
+                    <div class="project-details">
+                        <h2>Star-Walking</h2>
+                        <p>A responsive light installation to improve social interaction between individuals.</p>
+                    </div>
+                    <div class="layer">
+                        <h3>SUTD Design Thinking 2023</h3>
+                        <p>Received award for creative solution and interactive design</p>
+                        <a href="https://gamesthegame.my.canva.site/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!----------------------EXPERIENCES---------------------->
+    <div id="experiences">
+        <div class="container">
+            <h1 class="sub-title">Experiences</h1>
+            <div class="timeline">
+                <!--------------STICK 'EM-------------->
+                <div class="experience">
+                    <div class="summary-content">
+                        <h2>BUSINESS DEVELOPMENT AND OPERATIONS HEAD,<br><span>STICK ‘EM</span></h2>
+                        <p>AUG 2023 – JAN 2024</p>
+                    </div>
+                    <div class="details">
+                        <p>Spearheaded global growth by securing $115k in grants, establishing investor relationships for partnerships in Mongolia, Malaysia, Vietnam, and India.</p>
+                        
+                        <div class="skills">
+                            <div class="skill-badge">Business Development</div>
+                            <div class="skill-badge">Investor Relations</div>
+                            <div class="skill-badge">Creative Pitching</div>
+                            <div class="skill-badge">Stakeholder Management</div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+                <!--------------SCHNEIDER-------------->
+                <div class="experience">
+                        <div class="summary-content">
+                            <h2>DEMAND SUPPLY PLANNING INTERN,<br><span>SCHNEIDER ELECTRIC</span></h2>
+                            <p>MAY 2022 – SEP 2022</p>
+                        </div>
+
+                    <div class="details">
+                        <p>Developed and implemented Robotic Process Automation (RPA) projects, driving a 71% improvement in forecast accuracy and task efficiency for CSF and SIOP demand reviews in the East Asia and Japan region.</p>
+
+                        <div class="skills">
+                            <div class="skill-badge">VBA</div>
+                            <div class="skill-badge">RPA</div>
+                            <div class="skill-badge">Tableau</div>
+                            <div class="skill-badge">Python</div>
+                            <div class="skill-badge">MS Office</div>
+                            <div class="skill-badge">Demand & Supply planning</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--------------PWC-------------->
+                <div class="experience">
+                        <div class="summary-content">
+                            <h2>DEALS - BUSINESS RECOVERY SERVICES INTERN,<br><span>PRICEWATERHOUSECOOPERS</span></h2>
+                            <p>JAN 2022 – APR 2022</p>
+                        </div>
+
+                    <div class="details">
+                        <p>Assisted in the recovery of billion-dollar assets as part of the liquidation team for creditors.</p>
+                        
+                        <div class="skills">
+                            <div class="skill-badge">Business Recovery</div>
+                            <div class="skill-badge">Insolvency</div>
+                            <div class="skill-badge">Tableau</div>
+                            <div class="skill-badge">MS Office</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--------------RU-------------->
+                <div class="experience">
+                        <div class="summary-content">
+                            <h2>SOCIAL ENTERPRISE INITIATIVE LEAD,<br><span>SHRIMAD RAJCHANDRA LOVE AND CARE (SRLC)</span></h2>
+                            <p>JAN 2020 – PRESENT</p>
+                        </div>
+
+                    <div class="details">
+                        <p>Headed the end-to-end business framework for an e-commerce platform. Developed and executed a successful Go-To-Market strategy, resulting in SGD 26K revenue with a 37% margin in 8 months.</p>
+
+                        <div class="skills">
+                            <div class="skill-badge">Business Operations</div>
+                            <div class="skill-badge">Supply Chain management</div>
+                            <div class="skill-badge">SEO</div>
+                            <div class="skill-badge">Customer retention</div>
+                            <div class="skill-badge">Risk taker</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------YJS-------------->
+                <div class="experience">
+                        <div class="summary-content">
+                            <h2>YOUTH COMMITTEE VICE-PRESIDENT,<br><span>SINGAPORE JAIN RELIGIOUS SOCIETY</span></h2>
+                            <p>JAN 2014 – PRESENT</p>
+                        </div>
+
+                    <div class="details">
+                        <p>Actively participating and engaging with Inter-Religious Organization activities, fostering greater community integration for youth.</p>
+                       
+                        <div class="skills">
+                            <div class="skill-badge">Leadership</div>
+                            <div class="skill-badge">Team Player</div>
+                            <div class="skill-badge">Interpersonal Communication</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <!----------------------CONTACT---------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+    
+                    <div class="social-icons">
+                        <a href="mailto:muvil.kothari@gmail.com" class="icon-link">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>muvil.kothari@gmail.com</p>
+                        </a>
+                        <a href="https://linkedin.com/in/muvil-kothari/" class="icon-link">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <p>Muvil Kothari</p>
+                        </a>
+                        <a href="http://www.github.com/Muvilk" class="icon-link">
+                            <i class="fa-brands fa-github"></i>
+                            <p>muvilk</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!----------------------JS---------------------->
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw6JDIA36BbKS3hVtRH1a51gUvyOKFuLmm7ddqL1_aLOx6jcKthptVCOL7n4Fd82ei-/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        const formData = new FormData(form); // Create FormData object containing all form fields
+        fetch(scriptURL, { method: 'POST', body: formData })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset();
+                }
+        )
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+
+</body>
+</html>
+
