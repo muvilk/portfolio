@@ -352,6 +352,15 @@ nav ul{
     height: 100%;
 }
 
+.layer a i {
+    transition: transform 0.3s;
+}
+
+.project .layer a i:hover {
+    transform: scale(1.5);
+}
+
+
 /*------------------ EXPERIENCES -----------------*/
 #experiences {
     padding: 50px 0;
