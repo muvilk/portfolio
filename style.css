@@ -375,7 +375,10 @@ nav ul{
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     margin-bottom: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -422,7 +425,7 @@ nav ul{
 
 .experience .summary-content a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: #5271FF;
 }
 
@@ -435,6 +438,11 @@ nav ul{
 .experience .summary-content a:hover,
 .experience .summary-content a:hover span {
     color: #3651aa;
+}
+
+.company-logo {
+    max-width: 80px;
+    max-height: 80px;
 }
 
 
@@ -558,7 +566,7 @@ nav ul{
 }
 
 .back-to-top a:hover {
-    color: #0e2675;
+    color: #2a49b0;
 }
 
 
