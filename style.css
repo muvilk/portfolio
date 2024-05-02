@@ -176,6 +176,10 @@ nav ul{
     position: relative;
 }
 
+.tab-links:hover{
+    color: #5271FF;
+}
+
 .tab-links::after{
     content: '';
     width: 0;
