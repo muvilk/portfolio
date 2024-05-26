@@ -361,8 +361,34 @@
             </div>
         </div>
     </div>
-    
-    
+
+        <!----------------------CURSOR---------------------->
+
+    <div id="cursor-pointer"></div>
+    <div id="cursor-halo"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursorPointer = document.getElementById('cursor-pointer');
+            const cursorHalo = document.getElementById('cursor-halo');
+        
+            document.addEventListener('mousemove', (e) => {
+                cursorPointer.style.left = e.clientX + 'px';
+                cursorPointer.style.top = e.clientY + 'px';
+                cursorHalo.style.left = e.clientX + 'px';
+                cursorHalo.style.top = e.clientY + 'px';
+            });
+        
+            // Optional: Add a scaling effect when clicking
+            document.addEventListener('mousedown', () => {
+                cursorHalo.style.transform = 'translate(-50%, -50%) scale(0.8)';
+            });
+        
+            document.addEventListener('mouseup', () => {
+                cursorHalo.style.transform = 'translate(-50%, -50%) scale(1)';
+            });
+        });
+    </script>
 
     <!----------------------JS---------------------->
 
