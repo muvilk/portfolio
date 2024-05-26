@@ -112,8 +112,8 @@ nav ul{
 /*------------------ ABOUT ME -----------------*/
 
 #about{
-    padding-top: 100px;
-    padding-bottom: 90px;
+    padding-top: 5%;
+    padding-bottom: 5%;
     color: #ffffff;
 }
 
@@ -154,7 +154,8 @@ nav ul{
     flex-basis: 65%;
     text-align: justify;
     line-height: 1.2;
-    margin-left: 20px;
+    margin-left: 1%;
+    margin-bottom: 5%;
     padding: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -211,10 +212,12 @@ nav ul{
 
 .tab-contents{
     display: none;
+    margin-bottom: 5%;
 }
 
 .tab-contents.active-tab{
     display: block;
+    margin-bottom: 10%;
 }
 
 /*------------------ EDUCATION -----------------*/
