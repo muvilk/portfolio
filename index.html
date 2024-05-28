@@ -373,10 +373,13 @@
             const cursorHalo = document.getElementById('cursor-halo');
         
             document.addEventListener('mousemove', (e) => {
-                cursorPointer.style.left = e.clientX + 'px';
-                cursorPointer.style.top = e.clientY + 'px';
-                cursorHalo.style.left = e.clientX + 'px';
-                cursorHalo.style.top = e.clientY + 'px';
+                const x = e.clientX + window.pageXOffset;
+                const y = e.clientY + window.pageYOffset;
+
+                cursorPointer.style.left = x + 'px';
+                cursorPointer.style.top = y + 'px';
+                cursorHalo.style.left = x + 'px';
+                cursorHalo.style.top = y + 'px';
             });
         
             // Optional: Add a scaling effect when clicking
