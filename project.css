@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  nav {
+    margin: 20px;
+  }
+  
+  nav a {
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Card Layout */
+  .project-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+  
+  .project-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-poster {
+    width: 40%;
+    padding: 20px;
+  }
+  
+  .project-poster img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .project-details {
+    width: 100%;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .project-details h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .project-details .intro {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  .project-features {
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+
+  }
+  
+  .project-features h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+  
+  .project-features ul {
+    padding-left: 20px;
+  }
+  
+  .project-features li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  .project-github a {
+    font-size: 1.2em;
+    color: #007BFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .project-github a:hover {
+    text-decoration: underline;
+  }
+  
+  .project-video {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .project-video video {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Back Button */
+  .back-btn {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  .back-btn:hover {
+    background-color: #2660dd;
+    border-color: #2660dd;
+    color: #fff;
+  }
+  
