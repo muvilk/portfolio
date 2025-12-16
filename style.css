@@ -523,7 +523,7 @@ nav ul {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   margin-bottom: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -587,6 +587,12 @@ nav ul {
 .company-logo {
   max-width: 80px;
   max-height: 80px;
+}
+
+.company-logos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .date {
